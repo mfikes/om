@@ -37,11 +37,11 @@
                     :children (aget (.-props this) "children")})
              (ctor props))))})))
 
-(def input (wrap-form-element js/React.DOM.input "input"))
+(def input (wrap-form-element js/React.TextInput "input"))
 
-(def textarea (wrap-form-element js/React.DOM.textarea "textarea"))
+(def textarea (wrap-form-element js/React.Text "textarea"))
 
-(def option (wrap-form-element js/React.DOM.option "option"))
+#_(def option (wrap-form-element js/React.DOM.option "option"))
 
 (defn render
   "Equivalent to React.render"
